@@ -2,7 +2,7 @@
 using tabuleiro;
 
 
-namespace Xadrez
+namespace xadrez
 {
     class Tela
     {
@@ -25,6 +25,6 @@ namespace Xadrez
                 }
                 Console.WriteLine();
             }
-        }
+        }     
     }
 }
