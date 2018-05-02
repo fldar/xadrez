@@ -73,6 +73,8 @@ namespace xadrez
             mudaJogador();
         }
 
+
+
         public void validarPosicaoDeOrigem(Posicao pos)
         {
             if (tab.peca(pos) == null)
