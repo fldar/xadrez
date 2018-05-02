@@ -2,7 +2,7 @@
 using tabuleiro;
 using xadrez;
 
-namespace xadrez_console
+namespace xadrez
 {
     class Program
     {
@@ -11,11 +11,11 @@ namespace xadrez_console
 
             try
             {
-
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
                 while (!partida.terminada)
                 {
+
                     try
                     {
                         Console.Clear();
@@ -38,15 +38,15 @@ namespace xadrez_console
 
                         partida.realizaJogada(origem, destino);
                     }
-                    catch(TabuleiroException e)
+                    catch (TabuleiroException e)
                     {
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
                 }
-                
+
             }
-            catch(TabuleiroException e)
+            catch (TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
             }
