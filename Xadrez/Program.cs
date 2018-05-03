@@ -43,6 +43,11 @@ namespace xadrez
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Erro inesperado: " + e.Message);
+                        Console.ReadLine();
+                    }
                 }
                 Console.Clear();
                 Tela.imprimirPartida(partida);
